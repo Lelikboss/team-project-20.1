@@ -11,8 +11,13 @@ html {
   body {
     font-family: 'Montserrat' sans-serif;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.2;
+
+    @media screen and (min-width: 1280px) {
+      font-size: 18px;
+      
+    }
   }
   
   h1,
@@ -43,4 +48,19 @@ html {
     list-style: none;
     padding-left: 0;
     margin: 0;
+  }
+  .container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  
+    @media screen and (min-width: 768px) {
+      max-width: 768px;
+    }
+  
+    @media screen and (min-width: 1200px) {
+      max-width: 1280px;
+    }
   }
