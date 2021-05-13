@@ -1,0 +1,34 @@
+.about-us {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    width: 690px;
+    padding: 0;
+  }
+  background-color: aqua;
+
+  .about-us__img {
+    @media screen and (min-width: 768px) {
+      width: 330px;
+      height: 100%;
+    }
+  }
+  .about-us__wrap {
+    @media screen and (min-width: 768px) {
+      flex-basis: 336px;
+    }
+  }
+  .about-us__title {
+    font-family: var(--font-caveat-brush);
+    font-size: 24px;
+    line-height: 2.71;
+    color: var(--primary-text-color);
+    @media screen and (min-width: 1280px) {
+      font-size: 36px;
+      line-height: 1.81;
+    }
+  }
+  .about-us__text {
+    font-family: var(--font-montserrat);
+    line-height: 1.25;
+  }
+}
