@@ -1,0 +1,174 @@
+@charset "UTF-8";
+/*
+ * Главный файл стилей.
+ * Все паршалы подключаются сюда.
+ */
+.example {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  line-height: 1.5;
+  background-color: #fff;
+  color: #424242;
+  max-width: 960px;
+  padding: 16px;
+}
+
+.example code {
+  font-family: monospace;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: #009688;
+  color: #fff;
+  padding: 2px 6px;
+  border-radius: 2px;
+}
+
+.example .background {
+  height: 240px;
+  background-image: url("../images/demo.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  font-family: 'Montserrat' sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+@media screen and (min-width: 1280px) {
+  body {
+    font-size: 18px;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+}
+
+ul li {
+  margin-top: 0;
+  margin-right: 0;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+/* caveat-brush-regular - latin */
+@font-face {
+  font-family: 'Caveat Brush';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/caveat-brush-v6-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/caveat-brush-v6-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/caveat-brush-v6-latin-regular.woff2") format("woff2"), url("../fonts/caveat-brush-v6-latin-regular.woff") format("woff"), url("../fonts/caveat-brush-v6-latin-regular.ttf") format("truetype"), url("../fonts/caveat-brush-v6-latin-regular.svg#CaveatBrush") format("svg");
+  /* Legacy iOS */
+}
+
+/* montserrat-regular - latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/montserrat-v15-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/montserrat-v15-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat-v15-latin-regular.woff2") format("woff2"), url("../fonts/montserrat-v15-latin-regular.woff") format("woff"), url("../fonts/montserrat-v15-latin-regular.ttf") format("truetype"), url("../fonts/montserrat-v15-latin-regular.svg#Montserrat") format("svg");
+  /* Legacy iOS */
+}
+
+/* montserrat-500 - latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/montserrat-v15-latin-500.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/montserrat-v15-latin-500.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat-v15-latin-500.woff2") format("woff2"), url("../fonts/montserrat-v15-latin-500.woff") format("woff"), url("../fonts/montserrat-v15-latin-500.ttf") format("truetype"), url("../fonts/montserrat-v15-latin-500.svg#Montserrat") format("svg");
+  /* Legacy iOS */
+}
+
+/* montserrat-500italic - latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: italic;
+  font-weight: 500;
+  src: url("../fonts/montserrat-v15-latin-500italic.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/montserrat-v15-latin-500italic.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat-v15-latin-500italic.woff2") format("woff2"), url("../fonts/montserrat-v15-latin-500italic.woff") format("woff"), url("../fonts/montserrat-v15-latin-500italic.ttf") format("truetype"), url("../fonts/montserrat-v15-latin-500italic.svg#Montserrat") format("svg");
+  /* Legacy iOS */
+}
+
+.button {
+  padding: 12px 45px;
+  border-radius: 25px;
+  font-weight: 400;
+  font-size: 24px;
+  text-align: center;
+  background-color: brown;
+}
+
+.title-h2 {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.81;
+  text-align: center;
+}
+
+.title-h3 {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.25;
+  text-align: center;
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+/*# sourceMappingURL=main.css.map */
