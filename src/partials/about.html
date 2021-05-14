@@ -3,7 +3,18 @@
 
 <div class="container about-us">
     <div class="about-us__img">
-        <img src="/images/desktop/about us/about-us-donut-desktop-2x.jpg" alt="Coffe and donut" />
+        <picture>
+            <source srcset="/images/desktop/about_us/about-us-donut-desktop-1x.jpg 1x,
+                            /images/desktop/about_us/about-us-donut-desktop-2x.jpg 2x" media="(min-width: 1280px)"
+                    type="image/jpg" />
+            <source srcset="/images/tablet/about_us/about-us-tablet-1x.jpg 1x,
+                            /images/tablet/about_us/about-us-tablet-2x.jpg 2x" media="(min-width: 768px)"
+                    type="image/jpg" />
+            <source srcset="/images/mobile/about_us/about-us-donut-mobile-1x.jpg 1x,
+                            /images/mobile/about_us/about-us-donut-mobile-2x.jpg 2x" media="(max-width: 767px)"
+                    type="image/jpg" />
+        </picture>
+        <img src="/images/desktop/about_us/about-us-donut-desktop-2x.jpg" alt="Coffe and donut" />
     </div>
     <div class="about-us__wrap">
         <h2 class="about-us__title title-h2">About us</h2>
@@ -21,7 +32,9 @@
             you will
             enjoy our cooking atmosphere!
         </p>
-        <button class="about-us__btn--less">Less</button>
-        <button class="about-us__btn--read more">Read more</button>
+        <button type="button" class="about-us__btn about-us__btn--more">
+            Read more
+        </button >
+        <button type="button" class="about-us__btn about-us__btn--less">Less</button>
     </div>
 </div>

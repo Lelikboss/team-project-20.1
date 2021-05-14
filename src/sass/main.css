@@ -1,0 +1,274 @@
+@charset "UTF-8";
+/*
+ * Главный файл стилей.
+ * Все паршалы подключаются сюда.
+ */
+:root {
+  --primary-text-color: #2e2520;
+  --form-text-color: rgba(171, 129, 108, 0.5);
+  --mob-menu-hover-color: #876655;
+  --accent-color: #ab816c;
+  --text-white-color: #ffffff;
+  --icon-location-color: #000000;
+  --program-icon-color: #674d40;
+  --background-color: #fef3e4;
+  --font-montserrat: 'Montserrat';
+  --font-caveat-brush: 'Caveat Brush';
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  font-family: 'Montserrat' sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+@media screen and (min-width: 1280px) {
+  body {
+    font-size: 18px;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+}
+
+ul li {
+  margin-top: 0;
+  margin-right: 0;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+/* caveat-brush-regular - latin */
+@font-face {
+  font-family: 'Caveat Brush';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/caveat-brush-v6-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/caveat-brush-v6-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/caveat-brush-v6-latin-regular.woff2") format("woff2"), url("../fonts/caveat-brush-v6-latin-regular.woff") format("woff"), url("../fonts/caveat-brush-v6-latin-regular.ttf") format("truetype"), url("../fonts/caveat-brush-v6-latin-regular.svg#CaveatBrush") format("svg");
+  /* Legacy iOS */
+}
+
+/* montserrat-regular - latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/montserrat-v15-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/montserrat-v15-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat-v15-latin-regular.woff2") format("woff2"), url("../fonts/montserrat-v15-latin-regular.woff") format("woff"), url("../fonts/montserrat-v15-latin-regular.ttf") format("truetype"), url("../fonts/montserrat-v15-latin-regular.svg#Montserrat") format("svg");
+  /* Legacy iOS */
+}
+
+/* montserrat-500 - latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/montserrat-v15-latin-500.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/montserrat-v15-latin-500.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat-v15-latin-500.woff2") format("woff2"), url("../fonts/montserrat-v15-latin-500.woff") format("woff"), url("../fonts/montserrat-v15-latin-500.ttf") format("truetype"), url("../fonts/montserrat-v15-latin-500.svg#Montserrat") format("svg");
+  /* Legacy iOS */
+}
+
+/* montserrat-500italic - latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: italic;
+  font-weight: 500;
+  src: url("../fonts/montserrat-v15-latin-500italic.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/montserrat-v15-latin-500italic.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat-v15-latin-500italic.woff2") format("woff2"), url("../fonts/montserrat-v15-latin-500italic.woff") format("woff"), url("../fonts/montserrat-v15-latin-500italic.ttf") format("truetype"), url("../fonts/montserrat-v15-latin-500italic.svg#Montserrat") format("svg");
+  /* Legacy iOS */
+}
+
+.button {
+  padding: 12px 45px;
+  border-radius: 25px;
+  font-weight: 400;
+  font-size: 24px;
+  text-align: center;
+  border: none;
+  background-color: brown;
+}
+
+.title-h2 {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.81;
+  text-align: center;
+}
+
+.title-h3 {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.25;
+  text-align: center;
+}
+
+.social-icon:not(:last-child) {
+  margin-right: 12px;
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279.98px) {
+  .about-us {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 690px;
+    padding: 0;
+    -webkit-transform: translateX(-56px);
+            transform: translateX(-56px);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .about-us {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 980px;
+    padding: 0;
+    -webkit-transform: translateX(-156px);
+            transform: translateX(-156px);
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279.98px) {
+  .about-us .about-us__img {
+    width: 330px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .about-us .about-us__img {
+    width: 512px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279.98px) {
+  .about-us .about-us__wrap {
+    -ms-flex-preferred-size: 336px;
+        flex-basis: 336px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .about-us .about-us__wrap {
+    -ms-flex-preferred-size: 392px;
+        flex-basis: 392px;
+    padding-top: 67px;
+  }
+}
+
+.about-us .about-us__title {
+  font-family: var(--font-caveat-brush);
+  font-size: 24px;
+  line-height: 2.71;
+  color: var(--primary-text-color);
+}
+
+@media screen and (min-width: 768px) {
+  .about-us .about-us__title {
+    text-align: start;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .about-us .about-us__title {
+    font-size: 36px;
+    line-height: 1.81;
+    margin-bottom: 10px;
+  }
+}
+
+.about-us .about-us__text {
+  font-family: var(--font-montserrat);
+  line-height: 1.25;
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279.98px) {
+  .about-us .about-us__text {
+    line-height: 1.2;
+    margin-top: -10px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .about-us .about-us__text {
+    font-size: 18px;
+    line-height: 1.22;
+  }
+}
+
+.about-us .about-us__btn {
+  background-color: transparent;
+  font-family: var(--font-caveat-brush);
+  font-size: 18px;
+  line-height: 3.61;
+  color: var(--accent-color);
+  border-color: transparent;
+}
+/*# sourceMappingURL=main.css.map */
