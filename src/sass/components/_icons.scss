@@ -1,6 +1,7 @@
 .social-icon{
    fill: var(--primary-text-color);
 }
-.social-icon:not(:last-child){
+
+.social-link:not(:last-child){
    margin-right: 12px;
 }
