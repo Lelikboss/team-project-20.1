@@ -1,9 +1,10 @@
 .registration {
-    background-color: var(--background-color);
 
     @media screen and (max-width: 767.98px) {
         padding-top: 15px;
         padding-bottom: 34px;
+        background-color: #FFFFF9;
+        box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15), 4px 4px 4px rgba(171, 129, 108, 0.15);
         border-radius: 150px 150px 0px 0px;
     }
 
