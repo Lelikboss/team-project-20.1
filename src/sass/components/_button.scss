@@ -1,11 +1,16 @@
 .button{
     padding: 12px 45px;
     border-radius: 25px;
+    font-family: Caveat Brush;
     font-weight: 400;
     font-size: 24px;
   
     text-align: center;
     border:none;
-  
-    background-color: brown;
+    background-color: var(--accent-color);
+    color: var(--text-white-color);
+
+    @media screen and (max-width: 1279.99px) {
+      font-size: 18px;      
+    }
   }
