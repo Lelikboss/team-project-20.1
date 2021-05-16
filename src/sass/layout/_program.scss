@@ -11,7 +11,8 @@
 
 .program__elements {
   @media screen and (min-width: 768px) {
-    flex-basis: calc((100% - 30px * 2) / 2);
+    flex-basis: calc((100% - 34px * 2) / 2);
+    margin-right: 34px;
   }
 }
 
@@ -25,6 +26,20 @@
   &::before {
     content: '>';
   }
+}
+
+#moreText {
+  display: none;
+}
+
+.text-show {
+  cursor: pointer;
+  font-family: var(--font-caveat-brush);
+  color: var(--accent-color);
+  background-color: transparent;
+  font-size: 18px;
+  line-height: 3.61;
+  border: none;
 }
 
 .grid-list {
@@ -55,6 +70,7 @@
   position: absolute;
   top: 0;
   left: 0;
+  object-fit: contain;
 
   transform: translate(50%, -50%);
 }
