@@ -6,13 +6,21 @@
 .program__container {
   @media screen and (min-width: 768px) {
     display: flex;
+    justify-content: space-between;
   }
 }
 
 .program__elements {
   @media screen and (min-width: 768px) {
     flex-basis: calc((100% - 34px * 2) / 2);
-    margin-right: 34px;
+  }
+}
+
+.program__elements--donuts {
+  @media screen and (max-width: 767.98px) {
+    max-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -100,17 +108,23 @@
   }
 }
 
-.grid-list__item-container > p {
+.grid-list__text {
   font-size: 14px;
   margin-bottom: 12px;
 
   @media screen and (min-width: 1280px) {
     font-size: 18px;
+    margin-bottom: 17px;
   }
 }
 
 .grid-list__icon {
   fill: var(--program-icon-color);
-  width: 19px;
-  height: 18px;
+  max-width: 25px;
+  max-height: 20px;
+
+  @media screen and (min-width: 1280px) {
+    max-width: 32px;
+    max-height: 25px;
+  }
 }
