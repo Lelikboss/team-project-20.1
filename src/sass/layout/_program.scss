@@ -14,6 +14,19 @@
   @media screen and (min-width: 768px) {
     flex-basis: calc((100% - 34px * 2) / 2);
   }
+
+  & > h2 {
+    margin-bottom: 10px;
+
+    @media screen and (max-width: 319.98px) {
+      text-align: center;
+    }
+
+    @media screen and (max-width: 1279.98px) {
+      font-size: 24px;
+      line-height: 2.71;
+    }
+  }
 }
 
 .program__elements--donuts {
@@ -26,6 +39,10 @@
 
 .program__text {
   margin-bottom: 10px;
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 15px;
+  }
 }
 
 .program-list__item {
@@ -36,8 +53,10 @@
   }
 }
 
-#moreText {
-  display: none;
+@media screen and (max-width: 1279.98px) {
+  #moreText {
+    display: none;
+  }
 }
 
 .text-show {
@@ -48,6 +67,10 @@
   font-size: 18px;
   line-height: 3.61;
   border: none;
+
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
 }
 
 .grid-list {
@@ -61,7 +84,7 @@
 .grid-list__item {
   position: relative;
   margin-left: 6px;
-  margin-bottom: 70px;
+  margin-bottom: 60px;
   flex-basis: calc((100% - 2 * 6px) / 2);
   text-align: center;
 
