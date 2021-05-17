@@ -181,7 +181,9 @@
         }
     }
 }
-
+input {
+    background-color: #FFFFF9;
+}
 input::placeholder {
     color: rgba(171, 129, 108, 0.5);
 }
