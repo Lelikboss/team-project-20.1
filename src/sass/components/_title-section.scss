@@ -1,9 +1,12 @@
 .title-h2{
-    font-size: 36px;
-    line-height: 1.81;
-
-    color: var(--primary-text-color);
-    font-family: var(--font-caveat-brush);
+  font-size: 24;
+  line-height: 2.71;
+  color: var(--primary-text-color);
+  font-family: var(--font-caveat-brush);
+  @media screen and (min-width: 1280px) {
+      font-size: 36px;
+      line-height: 1.81;
+    }
   }
   .title-h3{
     font-size: 24px;
