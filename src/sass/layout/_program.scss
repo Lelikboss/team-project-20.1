@@ -28,7 +28,9 @@
     }
   }
 }
-
+.program__elements .title-h2{
+  text-align: start;
+}
 .program__elements--donuts {
   @media screen and (max-width: 767.98px) {
     max-width: 320px;
