@@ -7,19 +7,19 @@
         <div class="about-us__img">
             <picture class="about-us__img">
                 <source
-                    srcset="/images/desktop/about_us/about-us-donut-desktop-1x.png 1x, 
-                            /images/desktop/about_us/about-us-donut-desktop-2x.png 2x"
+                    srcset="./images/desktop/about_us/about-us-donut-desktop-1x.png 1x, 
+                            ./images/desktop/about_us/about-us-donut-desktop-2x.png 2x"
                     media="(min-width: 1280px)" type="image/png">
                 <source
-                    srcset="/images/tablet/about_us/about-us-tablet-1x.png 1x, 
-                            /images/tablet/about_us/about-us-tablet-1x.png 2x"
+                    srcset="./images/tablet/about_us/about-us-tablet-1x.png 1x, 
+                            ./images/tablet/about_us/about-us-tablet-1x.png 2x"
                     media="(min-width: 768px)" type="image/png">
                 <source
-                    srcset="/images/mobile/about_us/about-us-donut-mobile-1x.png 1x, 
-                            /images/mobile/about_us/about-us-donut-mobile-2x.png 2x"
+                    srcset="./images/mobile/about_us/about-us-donut-mobile-1x.png 1x, 
+                            ./images/mobile/about_us/about-us-donut-mobile-2x.png 2x"
                     media="(min-width: 320px)" type="image/png">
+                    <img src="./images/desktop/about_us/about-us-donut-desktop-2x.png" alt="coffe and donuts">
                 </picture>
-                <img src="./images/desktop/about_us/about-us-donut-desktop-2x.png" alt="coffe and donuts">
         </div>
         <div class="about-us__wrap">
             <h2 class="about-us__title">About us</h2>
@@ -33,15 +33,39 @@
                 has created hundreds of cakes for weddings and has baked for many celebrities. Eva and our shop have
                 received multiple awards & recognition for excellence.
             </p>
-            <p class="about-us__text">
-                We are going to teach you how to cook with passion and sparkles in your eyes! We love what we do and
-                believe
-                you will enjoy our cooking atmosphere!
-            </p>
-            <button type="button" class="about-us__btn about-us__btn--more">
+            <span id="points"></span>
+            <span id="moreText">
+                <p class="about-us__text">
+                    We are going to teach you how to cook with passion and sparkles in your eyes! We love what we do and
+                    believe
+                    you will enjoy our cooking atmosphere!
+                </p>
+            </span>
+            <button type="button" class="about-us__btn about-us__btn--more" onclick="toggleText()" id="textButton">
                 Read more
             </button>
-            <button type="button" class="about-us__btn about-us__btn--less">Less</button>
+            <!-- <button type="button" class="about-us__btn about-us__btn--less">Less</button> -->
         </div>
     </div>
 </section>
+
+<script>
+    function toggleText() {
+        var points =
+            document.getElementById("points");
+        var showMoreText =
+            document.getElementById("moreText");
+        var buttonText =
+            document.getElementById("textButton");
+        if (points.style.display === "none") {
+            showMoreText.style.display = "none";
+            points.style.display = "inline";
+            buttonText.innerHTML = "Read More";
+        }
+        else {
+            showMoreText.style.display = "inline";
+            points.style.display = "none";
+            buttonText.innerHTML = "Less";
+        }
+    }
+</script>
