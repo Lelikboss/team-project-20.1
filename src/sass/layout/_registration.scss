@@ -66,8 +66,13 @@
 
     &__label {
         margin-bottom: 13px;
+        font-weight: 400;
         font-size: 18px;
         line-height: 1.2;
+
+        @media screen and (max-width: 1279.98px) {
+            font-size: 16px;
+        }
     
         @media screen and (max-width: 767.98px) {
             text-align: center;
@@ -106,13 +111,16 @@
 
     &__form-field {
         width: 100%;
-        min-width: 234px;
         border: none;
         border-bottom: 1px solid var(--accent-color);
         outline: none;
     
         @media screen and (max-width: 767.98px) {
             max-width: 265px;
+        }
+
+        @media screen and (min-width: 768px) {
+            min-width: 234px;
         }
     }
 
