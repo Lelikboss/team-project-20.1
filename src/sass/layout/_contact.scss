@@ -17,6 +17,11 @@
         line-height: 271%;
         text-align: center;
         margin-bottom: 0;
+        
+        @media screen and (min-width:1280px) {
+            font-size: 36px;
+            line-height: 181%;
+        }
     }
 
     &__label {
