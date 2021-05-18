@@ -10,6 +10,7 @@ function renderCarouselRange(_, slick) {
 $carouselEl.on('init', renderCarouselRange);
 $carouselEl.slick({
     centerMode: true,
+    arrows: false,
     centerPadding: '0px',
     slidesToShow: 3,
     focusOnSelect: true,
