@@ -5,5 +5,17 @@ $('#carousel').slick({
     slidesToShow: 3,
     focusOnSelect: true,
     autoplay: false,
-    speed: 3000
+    speed: 3000,
+    responsive: [
+        {
+        breakpoint: 767.98,
+            settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: true,
+            
+            }
+        }
+
+    ]
 });
