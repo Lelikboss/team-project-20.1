@@ -4,7 +4,6 @@
             <h2 class="title-h2">
                 Program
             </h2>
-            
             <p class="program__text">
                 Indulge in this immersive sweet treat experience with The Chef Donut Queen in her New York donut shop!
             </p>
@@ -31,17 +30,15 @@
                     All products are included in the price
                 </li>
             </ul>
-            <span id="pointsProgram"></span>
-            <span id="moreTextProgram">
+            <!-- <span id="dots"></span> -->
+            <span id="text">
                 <p>
-                Come with your dear people and friends
-                and you will spend an unforgettable time and
-                will become a real professional in donuts cooking!
-            </p>
+                    Come with your dear people and friends
+                    and you will spend an unforgettable time and
+                    will become a real professional in donuts cooking!
+                </p>
             </span>
-            <button class="text-show" onclick="toggleTextProgram()" id="textButtonProgram">
-                Read More
-            </button>
+            <button id="toggle">Read More</button>
         </div>
         <div class="program__elements program__elements--donuts">
             <ul class="list grid-list">
@@ -133,24 +130,3 @@
         </div>
     </div>
 </section>
-
-<script>
-    function toggleTextProgram() {
-            var pointsProgram =
-                document.getElementById("pointsProgram");
-            var showMoreTextProgram =
-                document.getElementById("moreTextProgram");
-            var buttonTextProgram =
-                document.getElementById("textButtonProgram");
-            if (pointsProgram.style.display === "none") {
-                showMoreTextProgram.style.display = "none";
-                pointsProgram.style.display = "inline";
-                buttonTextProgram.innerHTML = "Read More";
-            }
-            else {
-                showMoreTextProgram.style.display = "inline";
-                pointsProgram.style.display = "none";
-                buttonTextProgram.innerHTML = "Less";
-            }
-        }
-</script>
