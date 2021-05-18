@@ -1,0 +1,41 @@
+.bottom--wrapper{
+        max-width: 1600px;
+        margin-left: auto;
+        margin-right: auto;
+        
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% 1214px;
+        background-image:
+            url(/images/mobile/contact/contact-bg-mobile-1x.png);
+        
+        @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+            background-image:
+              url(/images/mobile/contact/contact-bg-mobile-2x.png);
+          }
+        
+          @media screen and (min-width: 768px) {
+            background-size: 100% 1260px;
+            background-position: top;
+            background-image:
+              url(/images/tablet/contact/contact-bg-tablet-1x.png);
+        
+            @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+              background-image:
+              url(/images/tablet/contact/contact-bg-tablet-2x.png);
+            }
+          }
+        
+          @media screen and (min-width: 1280px) {
+              padding-top: 34px;
+            background-size: 100% 1600px;
+            background-image:
+              url(/images/desktop/contact/contact-bg-desktop-1x.png);
+        
+            @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+              background-image:
+              url(/images/desktop/contact/contact-bg-desktop-2x.png);
+            }
+          }
+}
