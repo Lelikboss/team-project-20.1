@@ -1,5 +1,22 @@
 .top--wrapper{
-    
+     &::after{
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 645px;
+    height: 100%;
+    @media screen and (min-width: 1280px) {
+      background-image: url(/images/desktop/hero/hero-donuts-desktop-1x.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+  
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: url(/images/desktop/hero/hero-donuts-desktop-2x.png);
+        background-repeat: no-repeat;
+      }
+    }
+  }
         max-width: 1600px;
         margin-left: auto;
         margin-right: auto;
@@ -26,6 +43,7 @@
           }
         
           @media screen and (min-width: 1280px) {
+            background-size: 100% 956px;
             background-image:
               url(/images/desktop/hero/hero-bg-desktop-1x.png);
         
