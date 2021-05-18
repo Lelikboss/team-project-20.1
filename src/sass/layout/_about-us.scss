@@ -11,6 +11,11 @@
 }
 
 .about-us__img {
+  @media screen and (max-width: 767.98px) {
+    width: 290px;
+    margin-left: auto;
+    margin-right: auto;
+  }
   @media screen and (min-width: 768px) and (max-width: 1279.98px) {
     position: absolute;
     top: 6px;

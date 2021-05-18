@@ -1,5 +1,5 @@
 $('#carousel').slick({
-    arrows: true,
+    arrows: false,
     centerMode: true,
     centerPadding: '0px',
     slidesToShow: 3,
