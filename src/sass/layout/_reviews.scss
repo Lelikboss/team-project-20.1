@@ -1,6 +1,6 @@
 .reviews-title {
     text-align: center;
-    margin-bottom: 5px;
+    margin-bottom: 5px; 
 }
 
 .carousel {
@@ -75,4 +75,31 @@
     .article-contant__image {
         width: 185px;
     }
+}
+
+.reviews__pagination-wrap{
+    margin-top: 35px;
+}
+.reviews-pagination{
+    position: relative;
+    font-size: 20px;
+    color: var(--accent-color);
+}
+.reviews-pagination::after{
+    display: block;                  
+    width:100px;                    
+    content: '';                      
+    position: absolute;              
+    border-bottom: 1px solid var(--accent-color);   
+    top:50%;                         
+    right: 290px;   
+}
+.reviews-pagination::before{
+    display: block;                  
+    width:100px;                    
+    content: '';                      
+    position: absolute;              
+    border-bottom: 1px solid var(--accent-color);   
+    top:50%;                         
+    left: 290px;   
 }
