@@ -9,7 +9,7 @@
                 Indulge in this immersive sweet treat experience with The Chef Donut Queen in her New York donut shop!
             </p>
             <ul class="list program-list">
-                <li class="program-list__item">
+                <li class="program-list__item"> 
                     A stand up history of donuts
                 </li>
                 <li class="program-list__item">
@@ -31,15 +31,15 @@
                     All products are included in the price
                 </li>
             </ul>
-            <span id="points"></span>
-            <span id="moreText">
+            <span id="pointsProgram"></span>
+            <span id="moreTextProgram">
                 <p>
                 Come with your dear people and friends
                 and you will spend an unforgettable time and
                 will become a real professional in donuts cooking!
             </p>
             </span>
-            <button class="text-show" onclick="toggleText()" id="textButton">
+            <button class="text-show" onclick="toggleText()" id="textButtonProgram">
                 Read More
             </button>
         </div>
@@ -136,21 +136,21 @@
 
 <script>
     function toggleText() {
-            var points =
-                document.getElementById("points");
-            var showMoreText =
-                document.getElementById("moreText");
-            var buttonText =
-                document.getElementById("textButton");
-            if (points.style.display === "none") {
-                showMoreText.style.display = "none";
-                points.style.display = "inline";
-                buttonText.innerHTML = "Read More";
+            var pointsProgram =
+                document.getElementById("pointsProgram");
+            var showMoreTextProgram =
+                document.getElementById("moreTextProgram");
+            var buttonTextProgram =
+                document.getElementById("textButtonProgram"); 
+            if (pointsProgram.style.display === "none") {
+                showMoreTextProgram.style.display = "none";
+                pointsProgram.style.display = "inline";
+                buttonTextProgram.innerHTML = "Read More";
             }
             else {
-                showMoreText.style.display = "inline";
-                points.style.display = "none";
-                buttonText.innerHTML = "Less";
+                showMoreTextProgram.style.display = "inline";
+                pointsProgram.style.display = "none";
+                buttonTextProgram.innerHTML = "Less";
             }
         }
 </script>
