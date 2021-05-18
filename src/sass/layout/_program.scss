@@ -1,5 +1,5 @@
 .program {
-  padding-top: 36px;
+  padding-top: 64px;
   padding-bottom: 25px;
 }
 
@@ -14,13 +14,13 @@
 }
 .program__elements {
   @media screen and (min-width: 768px) {
-    flex-basis: calc((100% - 34px * 2) / 2);
+    flex-basis: calc((100% - 30px) / 2);
   }
 
   & > h2 {
     margin-bottom: 10px;
 
-    @media screen and (max-width: 319.98px) {
+    @media screen and (max-width: 767.98px) {
       text-align: center;
     }
 
@@ -56,7 +56,7 @@
 }
 
 @media screen and (max-width: 1279.98px) {
-  #moreText {
+  #moreTextProgram {
     display: none;
   }
 }
@@ -79,15 +79,12 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-left: -6px;
-  margin-bottom: -6px;
 }
 
 .grid-list__item {
   position: relative;
-  margin-left: 6px;
   margin-bottom: 60px;
-  flex-basis: calc((100% - 2 * 6px) / 2);
+  flex-basis: calc((100%) / 2);
   text-align: center;
 
   &:nth-child(1n) {
@@ -152,7 +149,4 @@
     max-width: 32px;
     max-height: 25px;
   }
-}
-#moreTextProgram{
-  display: none;
 }
