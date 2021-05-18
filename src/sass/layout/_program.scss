@@ -9,7 +9,9 @@
     justify-content: space-between;
   }
 }
-
+.program__elements .title-h2{
+  text-align: start;
+}
 .program__elements {
   @media screen and (min-width: 768px) {
     flex-basis: calc((100% - 34px * 2) / 2);
