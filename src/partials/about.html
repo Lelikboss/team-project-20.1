@@ -33,15 +33,15 @@
                 has created hundreds of cakes for weddings and has baked for many celebrities. Eva and our shop have
                 received multiple awards & recognition for excellence.
             </p>
-            <span id="pointsAbout"></span>
-            <span id="moreTextAbout">
+           
+            <span id="text2">
                 <p class="about-us__text">
                     We are going to teach you how to cook with passion and sparkles in your eyes! We love what we do and
                     believe
                     you will enjoy our cooking atmosphere!
                 </p>
             </span>
-            <button type="button" class="about-us__btn about-us__btn--more" onclick="toggleTextAbout()" id="textButtonAbout">
+            <button type="button" class="about-us__btn about-us__btn--more" id="toggle2" >
                 Read more
             </button>
             <!-- <button type="button" class="about-us__btn about-us__btn--less">Less</button> -->
@@ -49,23 +49,3 @@
     </div>
 </section>
  
-<script>
-    function toggleTextAbout() {
-        var pointsAbout =
-            document.getElementById("pointsAbout");
-        var showMoreTextAbout =
-            document.getElementById("moreTextAbout");
-        var buttonTextAbout =
-            document.getElementById("textButtonAbout");
-        if (pointsAbout.style.display === "none") {
-            showMoreTextAbout.style.display = "none";
-            pointsAbout.style.display = "inline";
-            buttonTextAbout.innerHTML = "Read More";
-        }
-        else {
-            showMoreTextAbout.style.display = "inline";
-            pointsAbout.style.display = "none";
-            buttonTextAbout.innerHTML = "Less";
-        }
-    }
-</script>
