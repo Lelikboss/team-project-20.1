@@ -91,7 +91,16 @@
   color: var(--accent-color);
   border-color: transparent;
   cursor: pointer;
+
+  
+  transition: color var(--transition-time) $cubic, background-color var(--transition-time) $cubic,
+  fill var(--transition-time) $cubic;
+
+  &:hover, &:focus {
+    color: var(--button-focus-color);
+  }
 }
+
 #moreTextAbout{
   display: none;
 }
