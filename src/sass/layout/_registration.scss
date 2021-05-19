@@ -1,16 +1,6 @@
 .registration {
-    margin-top: 68px;
-    margin-bottom: 77px;
-    @media screen and (min-width: 768px) and (max-width: 1279.99px) {
-        margin-top: 40px;
-        margin-bottom: 51px;
-    }
-
-    @media screen and (max-width: 767.98px) {
-        margin-top: 30px;
-        margin-bottom: 27px;
-    }
-
+    padding-top: 30px;
+    
     &__main-container {
         @media screen and (max-width: 767.98px) {
         padding-top: 15px;
@@ -38,7 +28,7 @@
         background-color: var(--text-white-color);
     
         @media screen and (min-width: 768px) and (max-width: 1279.99px) {
-            max-width: 634px;
+           
             padding-left: 35px;
         }
     
@@ -102,14 +92,6 @@
         border: none;
         border-bottom: 1px solid var(--accent-color);
         outline: none;
-    
-        @media screen and (max-width: 767.98px) {
-            min-width: 265px;
-        }
-
-        @media screen and (min-width: 768px) {
-            min-width: 234px;
-        }
     }
 
     &__form-field:not(:first-child) {
@@ -184,4 +166,17 @@ input::placeholder {
 
 input:not(:placeholder-shown):required:invalid {
     border-color: red;
+}
+
+
+.registration__btn{
+    padding: 12px 45px;
+
+    @media screen and(min-width:786px) {
+        padding: 12px 40px;
+    }
+
+    @media screen and(min-width:1280px) {
+        padding: 12px 60px;
+    }
 }
