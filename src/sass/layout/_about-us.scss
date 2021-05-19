@@ -41,20 +41,11 @@
     margin-left: auto;
   }
 }
-.about-us__title {
-  font-family: var(--font-caveat-brush);
-  font-size: 24px;
-  line-height: 2.71;
+
+.section-title__about-us {
   margin-bottom: 10px;
-  color: var(--primary-text-color);
-  text-align: center;
-  @media screen and (min-width: 768px) and (max-width: 1279.98px) {
-    font-weight: 400;
-    text-align: start;
-  }
-  @media screen and (min-width: 1280px) {
-    font-size: 36px;
-    line-height: 1.81;
+
+  @media screen and (min-width: 768px) {
     text-align: start;
   }
 }
@@ -92,15 +83,15 @@
   border-color: transparent;
   cursor: pointer;
 
-  
   transition: color var(--transition-time) $cubic, background-color var(--transition-time) $cubic,
-  fill var(--transition-time) $cubic;
+    fill var(--transition-time) $cubic;
 
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     color: var(--button-focus-color);
   }
 }
 
-#text2{
+#text2 {
   display: none;
 }
