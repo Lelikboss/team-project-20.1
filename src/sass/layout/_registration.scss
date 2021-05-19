@@ -1,6 +1,69 @@
 .registration {
-    padding-top: 30px;
+    z-index: 999;
+    position: relative;
+    @media screen and (min-width: 768px) {
+        &::before{
+            content: '';
+            position: absolute;
+            z-index: -1;
+            left: 60%;
+            top: 45%;
+            background-repeat: no-repeat;
+            background-image: url(/images/tablet/registration/registration-pic-tablet-1x-2.png);
+            width: 286px;
+            height: 345px;
+            @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+                background-image: url(/images/tablet/registration/registration-pic-tablet-2x-2.png);
+                background-size: 286px 345px;
+                top: 49%;
+              }
+        }
+        
+    }
+    @media screen and (min-width: 1280px) {
+        &::before{
+            content: '';
+            position: absolute;
+            z-index: -1;
+            left: 60%;
+            top: 45%;
+            width: 341px;
+    height: 345px;
+    background-size: 395px 400px;
+            background-repeat: no-repeat;
+            background-image: url(/images/desktop/registration/registration-pic-desktop-1x-2.png);
+            
+            @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+                background-image: url(/images/desktop/registration/registration-pic-desktop-2x-2.png);
+                background-size: 431px 356px;
+                width: 500px;
+                top: 49%;
+              }
+        }
+        
+    }
     
+    padding-top: 30px;
+    @media screen and (min-width: 768px) {
+        background-image: url(/images/tablet/registration/registration-pic-tablet-1x-1.png);
+        background-repeat: no-repeat;
+        background-position: left;
+        @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+            background-image: url(/images/tablet/registration/registration-pic-tablet-2x-1.png);
+            background-repeat: no-repeat;
+            background-size: 235px 255px;
+          }
+    }
+    @media screen and (min-width: 1280px) {
+        background-image: url(/images/desktop/registration/registration-pic-desktop-1x-1.png);
+        background-repeat: no-repeat;
+        background-position: 70px;
+        @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+            background-image: url(/images/desktop/registration/registration-pic-desktop-2x-1.png);
+            background-repeat: no-repeat;
+            background-size: 257px 255px;
+          }
+    }
     &__main-container {
 
         @media screen and (max-width: 767.98px) {
@@ -40,6 +103,7 @@
             padding-top: 0;
             padding-bottom: 0;
         }
+        
     }
 
     &__label {
