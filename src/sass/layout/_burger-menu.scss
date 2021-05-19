@@ -24,6 +24,7 @@
     display: none;
   }
 }
+
 .menu-button__icon-menu {
   fill: var(--primary-text-color);
 }
@@ -89,10 +90,11 @@
   color: var(--primary-text-color);
 
   text-decoration: none;
-  transition: color 2500ms $cubic;
+  transition: color var(--transition-time) $cubic;
 
   &:hover,
   &:focus {
-    color: var(--mob-menu-hover-color);
+    // color: var(--mob-menu-hover-color);
+    color: var(--button-focus-color);
   }
 }

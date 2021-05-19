@@ -9,4 +9,13 @@
     border:none;
   
     background-color: var(--accent-color);
-  } 
+
+    transition: color var(--transition-time) $cubic, background-color var(--transition-time) $cubic,
+    fill var(--transition-time) $cubic;
+  }
+
+  .button:hover,
+  .button:focus {
+    color: var(--button-focus-color);
+    background-color: var(--button-bg-color);
+  }

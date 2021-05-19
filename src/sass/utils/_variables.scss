@@ -1,4 +1,5 @@
 :root {
+  // Color variables
   --primary-text-color: #2e2520;
   --form-text-color: rgba(171, 129, 108, 0.5);
   --mob-menu-hover-color: #876655;
@@ -7,10 +8,15 @@
   --icon-location-color: #000000;
   --program-icon-color: #674d40;
   --background-color: #fef3e4;
+  --button-focus-color: rgba(238, 5, 5, 0.644);
+  --button-bg-color: rgb(93, 223, 228);
 
   //   Шрифты
   --font-montserrat: 'Montserrat';
   --font-caveat-brush: 'Caveat Brush';
+
+  // Time variables
+  --transition-time: 500ms;
 }
 
 $cubic: cubic-bezier(0.4, 0, 0.2, 1);
