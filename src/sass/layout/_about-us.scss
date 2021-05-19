@@ -93,14 +93,29 @@
   cursor: pointer;
 
   
-  transition: color var(--transition-time) $cubic, background-color var(--transition-time) $cubic,
-  fill var(--transition-time) $cubic;
 
-  &:hover, &:focus {
-    color: var(--button-focus-color);
+  transition: color var(--animation-effect),background-color var(--accent-color),fill var(--accent-color);
+}
+
+// #text2{
+//   display: none;
+// }
+@media screen and (max-width: 1279.98px) {
+  #text2 {
+    display: none;
   }
 }
 
-#text2{
-  display: none;
+#toggle2 {
+  cursor: pointer;
+  font-family: var(--font-caveat-brush);
+  color: var(--accent-color);
+  background-color: transparent;
+  font-size: 18px;
+  line-height: 3.61;
+  border: none;
+
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
 }
