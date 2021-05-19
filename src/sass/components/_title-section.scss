@@ -1,19 +1,20 @@
-.title-h2{
-  font-size: 24;
+.section-title {
+  font-size: 24px;
   line-height: 2.71;
   text-align: center;
   color: var(--primary-text-color);
   font-family: var(--font-caveat-brush);
-  @media screen and (min-width: 1280px) {
-      font-size: 36px;
-      line-height: 1.81;
-    }
-  }
-  .title-h3{
-    font-size: 24px;
-    line-height: 1.25;
-    text-align: center;
 
-    color: var(--primary-text-color);
-    font-family: var(--font-caveat-brush);
+  @media screen and (min-width: 1280px) {
+    font-size: 36px;
+    line-height: 1.81;
   }
+}
+.component-title {
+  font-size: 24px;
+  line-height: 1.25;
+  text-align: center;
+
+  color: var(--primary-text-color);
+  font-family: var(--font-caveat-brush);
+}
