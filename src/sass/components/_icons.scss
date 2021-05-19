@@ -1,12 +1,12 @@
 .social-icon {
    fill: var(--primary-text-color);
-   transition: fill var(--transition-time) $cubic;
+   transition: fill var(--animation-effect);
 }
 
-// .social-icon:hover,
-// .social-icon:focus {
-//    fill: rgba(238, 5, 5, 0.644);
-// }
+.social-icon:hover,
+.social-icon:focus {
+   fill: var(--accent-color);
+}
 
 .social-link:not(:last-child) {
    margin-right: 12px;
