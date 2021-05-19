@@ -23,22 +23,22 @@
   line-height: 1.25;
 
   color: var(--primary-text-color);
-  transition: color var(--transition-time) $cubic, background-color var(--transition-time) $cubic,
-  fill var(--transition-time) $cubic;
+  transition: var(--animation-effect);
+
 
   &:hover,
   &:focus {
-    color: var(--button-focus-color);
+    color: var(--accent-color);
   }
 }
 
 .footer__address {
-  transition: color var(--transition-time) $cubic, background-color var(--transition-time) $cubic,
-    fill var(--transition-time) $cubic;
+  color: var(--primary-text-color);
+  transition: var(--animation-effect);
 
   &:hover,
   &:focus {
-    fill: var(--button-focus-color);
-    color: var(--button-focus-color);
+    fill: var(--accent-color);
+  
   }
 }
