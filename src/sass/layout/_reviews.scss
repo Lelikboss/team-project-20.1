@@ -86,20 +86,28 @@
     color: var(--accent-color);
 }
 .reviews-pagination::after{
-    display: block;                  
-    width:100px;                    
-    content: '';                      
-    position: absolute;              
-    border-bottom: 1px solid var(--accent-color);   
-    top:50%;                         
-    right: 290px;   
-}
+
+    @media screen and (min-width: 1280px){
+        display: block;                  
+        width:100px;                    
+        content: '';                      
+        position: absolute;              
+        border-bottom: 1px solid var(--accent-color);   
+        top:50%;                         
+        right: 290px;  
+    } 
+ }
+
 .reviews-pagination::before{
-    display: block;                  
-    width:100px;                    
-    content: '';                      
-    position: absolute;              
-    border-bottom: 1px solid var(--accent-color);   
-    top:50%;                         
-    left: 290px;   
+
+    @media screen and (min-width:1280px) {
+        display: block;                  
+        width:100px;                    
+        content: '';                      
+        position: absolute;              
+        border-bottom: 1px solid var(--accent-color);   
+        top:50%;                         
+        left: 290px; 
+    }
+  
 }
