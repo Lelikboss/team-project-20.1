@@ -24,14 +24,11 @@
         display: flex;
         flex-direction: column;
     }
-
-    &__form .button {
-        cursor: pointer;
-    }
     
     &__form-button {
         margin-right: auto;
         margin-left: auto;
+        cursor: pointer;
     }
 
     &__form-fields {
