@@ -1,5 +1,5 @@
 .registration {
-    z-index: 999;
+    z-index: 2;
     position: relative;
     @media screen and (min-width: 768px) {
         &::before{
@@ -148,6 +148,7 @@
             margin-right: auto;
             margin-left: auto;
             margin-bottom: 25px;
+            width: 265px;
         }
     }
 
@@ -156,16 +157,25 @@
         border: none;
         border-bottom: 1px solid var(--accent-color);
         outline: none;
+        font-size: 14px;
+        @media screen and (min-width: 1280px) {
+            font-size: 16px;
+        }
+        
     }
-
-    &__form-field:not(:first-child) {
+    &__form-field:-webkit-autofill,
+    &__form-field:-webkit-autofill:hover,
+    &__form-field:-webkit-autofill:focus{
+        -webkit-text-fill-color: var(--icon-location-color);
+        -webkit-box-shadow: 0 0 0px 1000px var(--bg-field-color) inset;
+    }
+    &__form-label:not(:first-child){
         margin-top: 15px;
 
         @media screen and (max-width: 767.98px) {
             margin-top: 25px;
         }
     }
-
     &__meta {
         align-items: center;
         margin-right: 30px;
@@ -231,7 +241,9 @@ input::placeholder {
 input:not(:placeholder-shown):required:invalid {
     border-color: red;
 }
-
+input:not(:placeholder-shown):required:valid {
+    border-color: green;
+}
 .registration__title{
     margin-bottom: 10px;
 }

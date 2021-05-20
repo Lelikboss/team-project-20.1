@@ -24,9 +24,6 @@
     display: none;
   }
 }
-// .menu-button.is-open{
-//   position: fixed;
-// }
 .menu-button__icon-menu {
   fill: var(--primary-text-color);
 }
@@ -64,7 +61,7 @@
   }
 }
 
-.menu_navigation {
+.menu__navigation {
   text-align: center;
   padding-top: 25px;
 }
@@ -82,7 +79,7 @@
     border-right: 1px solid var(--primary-text-color);
   }
 }
-.menu_logo-icon {
+.menu__logo-icon {
   fill: var(--primary-text-color);
 }
 
