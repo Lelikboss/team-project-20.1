@@ -92,6 +92,22 @@
   }
 }
 
-#text2 {
-  display: none;
+@media screen and (max-width: 1279.98px) {
+  #text2 {
+    display: none;
+  }
+}
+
+#toggle2 {
+  cursor: pointer;
+  font-family: var(--font-caveat-brush);
+  color: var(--accent-color);
+  background-color: transparent;
+  font-size: 18px;
+  line-height: 3.61;
+  border: none;
+
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
 }
