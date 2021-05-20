@@ -10,21 +10,33 @@
   background-color: transparent;
   cursor: pointer;
 
-  &--close{
+  &--close {
     position: absolute;
     right: 6px;
   }
   @media screen and (min-width: 768px) {
-    position: relative;
-    top: 0px;
-    right: 0px;
+    // position: relative;
+    // top: 0px;
+    // right: 0px;
+    position: absolute;
+    top: 35%;
+    right: 15%;
   }
 
   @media screen and (min-width: 1280px) {
     display: none;
   }
+
   &.is-open {
     position: fixed;
+    top: 9px;
+    right: 15px;
+
+    @media screen and (min-width: 768px) {
+      position: fixed;
+      top: 7%;
+      right: 15%;
+    }
   }
 }
 
@@ -78,8 +90,8 @@
     align-items: baseline;
   }
 }
-@media screen and (min-height: 320px) and (max-height: 410.98px){
-  .menu-nav__item:not(:last-child){
+@media screen and (min-height: 320px) and (max-height: 410.98px) {
+  .menu-nav__item:not(:last-child) {
     border-right: 1px solid var(--primary-text-color);
   }
 }
@@ -89,7 +101,7 @@
 
 .menu-nav__item + .menu-nav__item {
   margin-top: 45px;
-  @media screen and (min-height: 320px) and (max-height: 410.98px){
+  @media screen and (min-height: 320px) and (max-height: 410.98px) {
     margin-top: 0;
   }
   @media screen and (min-width: 768px) {
@@ -105,7 +117,7 @@
 
   text-decoration: none;
   transition: color var(--transition-time) $cubic;
-  @media screen and (min-height: 320px) and (max-height: 410.98px){
+  @media screen and (min-height: 320px) and (max-height: 410.98px) {
     padding: 20px 10px;
   }
   &:hover,
