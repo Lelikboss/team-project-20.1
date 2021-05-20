@@ -8,3 +8,9 @@
     mobileMenuRef.classList.toggle("is-open")
   })
 })()
+const navEl = document.querySelector("[data-menu]");
+navEl.addEventListener("click", (e) => {
+  if (e.target instanceof HTMLAnchorElement) {
+        navEl.classList.remove("is-open");
+      }
+})
