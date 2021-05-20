@@ -43,7 +43,6 @@
         
     }
     
-    padding-top: 30px;
     @media screen and (min-width: 768px) {
         background-image: url(/images/tablet/registration/registration-pic-tablet-1x-1.png);
         background-repeat: no-repeat;
@@ -233,7 +232,9 @@ input:not(:placeholder-shown):required:invalid {
     border-color: red;
 }
 
-
+.registration__title{
+    margin-bottom: 10px;
+}
 .registration__btn{
     padding: 12px 45px;
 
@@ -244,4 +245,8 @@ input:not(:placeholder-shown):required:invalid {
     @media screen and(min-width:1280px) {
         padding: 12px 60px;
     }
+}
+
+.registration-section{
+    padding-top: 30px;
 }

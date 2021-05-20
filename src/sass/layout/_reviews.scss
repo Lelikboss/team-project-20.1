@@ -1,10 +1,17 @@
+.article{
+    padding-top: 30px;
+}
 .reviews-title {
     text-align: center;
     margin-bottom: 5px; 
+    line-height: 1.2;
 }
 
 .carousel {
-    height: 280px;
+    height: 266px;
+    @media screen and (max-width: 767.98px) {
+        height: 200px;
+    }
 }
 
 .article-contant__image {
@@ -35,6 +42,7 @@
 }
 
 .reviews__stars {
+    padding-top: 6px;
     width: 136px;
 }
 
@@ -73,7 +81,10 @@
 .slick-center,
 .slick-slide[aria-hidden="true"]:not([tabindex="-1"]) + .slick-cloned[aria-hidden="true"] {
     .article-contant__image {
-        width: 185px;
+        @media screen and (min-width: 768px) {
+            width: 185px;
+        }
+
     }
 }
 
@@ -81,6 +92,8 @@
     margin-top: 35px;
 }
 .reviews-pagination{
+    margin-bottom: 0;
+    text-align: center;
     position: relative;
     font-size: 20px;
     color: var(--accent-color);

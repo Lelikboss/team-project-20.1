@@ -5,7 +5,7 @@
         
         background-size: contain;
         background-repeat: no-repeat;
-        background-position: center;
+        background-position: center 17px;
         background-size: 100% 1214px;
         background-image:
             url(/images/mobile/contact/contact-bg-mobile-1x.png);
@@ -16,7 +16,7 @@
           }
         
           @media screen and (min-width: 768px) {
-            background-size: 100% 1260px;
+            background-size: 100% 1206px;
             background-position: top;
             background-image:
               url(/images/tablet/contact/contact-bg-tablet-1x.png);
@@ -29,8 +29,8 @@
         
           @media screen and (min-width: 1280px) {
               padding-top: 34px;
-              background-position: bottom;
-            background-size: 100% 1600px;
+              background-position: center 30px;
+            background-size: 100% 1329px;
             background-image:
               url(/images/desktop/contact/contact-bg-desktop-1x.png);
         
