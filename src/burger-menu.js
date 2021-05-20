@@ -9,8 +9,10 @@
   })
 })()
 const navEl = document.querySelector("[data-menu]");
+const menuBtnRef = document.querySelector("[data-menu-button]");
 navEl.addEventListener("click", (e) => {
   if (e.target instanceof HTMLAnchorElement) {
         navEl.classList.remove("is-open");
+        menuBtnRef.classList.remove("is-open");
       }
 })
