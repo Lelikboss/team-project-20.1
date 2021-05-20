@@ -33,17 +33,18 @@
 
 .logo {
   fill: var(--button-focus-color);
-  transition: color var(--transition-time) $cubic, background-color var(--transition-time) $cubic,
-    fill var(--transition-time) $cubic;
+  transition: fill var(--animation-effect);
+  &:hover,
+  &:focus{
+    fill: var(--accent-color)
+  }
 }
 
 .logo__icon {
   width: 96px;
   height: 43px;
   fill: var(--primary-text-color);
-  transition: color var(--transition-time) $cubic, background-color var(--transition-time) $cubic,
-  fill var(--transition-time) $cubic;
-
+  transition: fill var(--animation-effect);
   @media screen and (min-width: 768px) {
     width: 96px;
   }
@@ -52,7 +53,7 @@
     height: 71px;
   }
   &:hover, &:focus {
-    fill: var(--button-focus-color);
+    fill: var(--accent-color);
   }
 }
 

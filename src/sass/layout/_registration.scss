@@ -158,7 +158,7 @@
         border-bottom: 1px solid var(--accent-color);
         outline: none;
         font-size: 14px;
-        background-color: #e5e5e5;
+        background-color: var(--bg-input-color);
         @media screen and (min-width: 1280px) {
             font-size: 16px;
         }
@@ -168,7 +168,7 @@
     &__form-field:-webkit-autofill:hover,
     &__form-field:-webkit-autofill:focus{
         -webkit-text-fill-color: var(--icon-location-color);
-        -webkit-box-shadow: 0 0 0px 1000px var(--bg-field-color) inset;
+        -webkit-box-shadow: 0 0 0px 1000px var(--bg-input-color) inset;
     }
     &__form-label:not(:first-child){
         margin-top: 15px;
