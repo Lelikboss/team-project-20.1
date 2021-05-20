@@ -1,16 +1,20 @@
-.contact {
+.contact-section{
     padding-top: 50px;
-    padding-bottom: 74px;
-    @media screen and (max-width: 767.98px) {
+    padding-bottom: 47px;
+    @media screen and (min-width: 768px) {
+        padding-top: 75px;
         padding-bottom: 50px;
+    }
+}
+.contact {
+    @media screen and (max-width: 767.98px) {
     }
 
     @media screen and (min-width: 768px) and (max-width: 1279.98px) {
-       padding-top: 80px;
-        padding-bottom: 37px;
     }
 
     &__label {
+        margin-bottom: 0;
         padding-bottom: 0;
         font-weight: 400;
         font-size: 18px;
@@ -77,7 +81,10 @@
         }
     }
 }
-
+.contact-title{
+   line-height: 1.2;
+    margin-bottom: 0;
+}
 input::placeholder {
     color: rgba(171, 129, 108, 0.5);
 }

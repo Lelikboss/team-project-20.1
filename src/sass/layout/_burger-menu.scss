@@ -24,7 +24,9 @@
     display: none;
   }
 }
-
+.menu-button.is-open{
+  position: fixed;
+}
 .menu-button__icon-menu {
   fill: var(--primary-text-color);
 }
