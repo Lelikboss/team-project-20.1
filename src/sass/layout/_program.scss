@@ -48,7 +48,13 @@
   margin-bottom: 10px;
 
   &::before {
-    content: '>';
+    content: '';
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    background-image: url('/images/mobile/program/program-mobile-2x-4.png');
+    background-size: contain;
+    background-repeat: no-repeat;
   }
 }
 
